@@ -22,7 +22,7 @@ section.hero {
         color: var(--snitap-leaf-mid);
     }
     h1 span:nth-child(4) {
-        color: var(--snitap-leaf-mid);
+      color: var(--snitap-sky-mid);
     }
 
     h1 span{
