@@ -6,7 +6,7 @@ section.hero {
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    
+
 
     & h1 {
         max-width: 40rem;
@@ -121,7 +121,7 @@ section.hero {
 
             & img[src*="patins"] {
                 z-index: 1;
-            
+
                 transform: translateX(200%);
                 animation: slide-in 3s ease forwards;
             }
@@ -137,11 +137,11 @@ section.hero {
 
             & img[src*="stars-2"] {
                 max-width: 2.5rem;
-                bottom:35%;
+                bottom: 35%;
                 right: 0;
                 opacity: 0;
                 transform: translateX(400%);
-                animation: slide-in 1s ease both,appear 2.2s 800ms ease both;
+                animation: slide-in 1s ease both, appear 2.2s 800ms ease both;
             }
 
 
@@ -150,9 +150,25 @@ section.hero {
     }
 
 }
-@media (width <= 70rem) {
-    section.hero{
-        flex-direction: column;
+
+@media (width <=70rem) {
+    section.hero {
+
+        flex-direction: column-reverse;
+
+
+        & .buttons {
+            margin-top: 3rem;
+            display: grid;
+            gap: 2rem;
+
+        }
+
+        &>div:nth-child(2) {
+            width: 19.5rem;
+            height: 19.5rem;
+        }
+
     }
 }
 
@@ -167,7 +183,7 @@ section.hero {
 }
 
 @keyframes appear {
-    to{
+    to {
         opacity: 100%;
     }
 }
