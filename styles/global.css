@@ -25,10 +25,6 @@
 
 }
 
-/* html {
-    zoom: .3;
-} */
-
 html,
 button {
     --font: 500 1rem/1.5 var(--ff-base);
